@@ -8,9 +8,11 @@
 # at the directions from Section 1 if you need a refresher on how to do that.
 
 
-#-------------------
-# PART 1: Comparing variables
-#-------------------
+puts "-------------------",
+"PART 1: Comparing variables",
+"-------------------"
+
+
 
 number_teachers = 4
 number_students = 20
@@ -23,56 +25,63 @@ puts "Is number_teachers greater than number_students?", number_teachers > numbe
 
 # YOU DO: print the result of the comparison: is number_teachers less than number_students?
 # this should print: true
-
+puts "Is the number of teachers less than the number of students?", number_teachers<number_students
 # YOU DO: print the result of the comparison: is number_teachers equal to string_teachers?
 # this should print: false
-
+puts "Is number_teachers equal to string_teachers?", number_teachers==string_teachers
 # YOU DO: print the result of the comparison: is number_teachers not equal to number_students?
 # this should print: true
-
+puts "is number_teachers not equal to number_students?", number_teachers != number_students
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 20?
 # this should print: true
-
+puts "is number_students greater than or equal to 20?", number_students >= 20
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 21?
 # this should print: false
-
+puts "is number_students greater than or equal to 21?", number_students >= 21
 # YOU DO: print the result of the comparison: is number_students less than or equal to 20?
 # this should print: true
-
+puts "is number_students less than or equal to 20?", number_students == 20
 # YOU DO: print the result of the comparison: is number_students less than or equal to 21?
 # this should print: true
+puts "is number_students less than or equal to 21", number_students <= 21
 
-
-#-------------------
-# PART 2: Articulating what you are doing
-#-------------------
+puts "-------------------",
+"PART 2: Articulating what you are doing",
+"-------------------"
 
 # For the following prompts, you will be given a line of code and your task is to type out a Comment,
 # in English, explaining what that line of code is doing, including what the comparison will evaluate to.
 # Be as technically precise as possible, but don't just copy and paste a definition from the readings.
 # Make sure YOU can explain it that way!
 
+
+
 puts 4 < 9
-#YOU DO: Explain.
+#YOU DO: Evaluates 4<9 and displays true or false.  In this case, the display will be 'true'.
 
 books = 3
 puts 4 < books
-# YOU DO: Explain.
+# YOU DO: Evaluates if 4 is less than the value stored in the variable 'books' and displays true or false.
+#  In this case, the display will be 'false'.
 
 friends = 6
 siblings = 2
 puts friends > siblings
-# YOU DO: Explain.
+# YOU DO: Determines if the value stored in the variable 'friends' is greater than the value stored in 
+# the variable 'siblings' and displays true or false.  In this case, the display will be 'true'
 
 attendees = 9
 meals = 8
 puts attendees != meals
-# YOU DO: Explain.
+# YOU DO: Determines if the value stored in the variable 'attendees' is not equal to the value stored in 
+# the variable 'meals' and displays true or false.  In this case, the display will be 'true'
 
 
-#-------------------
-# PART 3: Logical Operators
-#-------------------
+puts "-------------------",
+"PART 3: Logical Operators",
+"-------------------"
+
+
 
 is_hungry = true
 finished_homework = false
@@ -90,15 +99,17 @@ age = 1
 
 # YOU DO:
 # Determine if the dog loves to play and loves treats
-
+puts loves_to_play && loves_treats
 
 # Determine if the dog loves to play and loves the dog park
-
+puts loves_to_play && loves_dog_park
 
 # Determine if the dog loves to play or loves the dog park
-
+puts loves_to_play || loves_dog_park
 
 # Determine if the dog loves to play and is a puppy
-
+puts loves_to_play && age < 1
 # What did your final line of code evaluate to? Why do you think that is? Explain.
-# ANSWER:
+# ANSWER:  If I used 'loves_to_play && dog == puppy' this would fail because 'dog' and 'puppy'
+# are not valid variables in this program.  So, assuming a puppy is a dog of less than 
+# one year old, I have compared the variable 'age' and checked that it was less than one
